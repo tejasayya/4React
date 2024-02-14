@@ -10,12 +10,20 @@ class States extends React.Component {
   constructor(props) {
     super(props);
     console.log('window.models.states', window.models.states);
+    const states = window.models.states(); 
+    console.log(states);
   }
 
   render() {
     return (
       <div>
-        Replace this with the code for Project 4, Problem 2
+        <label htmlFor="filter">Input:</label>
+        <input type="text" id="filter" name="filter"/>
+        <ul>
+          {window.models.states().map((state, index) => (
+            <li key={index}>{state}</li>
+          ))}
+        </ul>
       </div>
     );
   }
