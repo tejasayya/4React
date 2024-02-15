@@ -16,19 +16,21 @@ function States() {
   filteredStates.sort((a, b) => a.localeCompare(b));
 
   const statesListItems = filteredStates.map((state, index) => (
-    <li key={index}>{state}</li>
+    <li key={index} className="states-list-item">{state}</li>
   ));
 
-  let statesList = <ul>{statesListItems}</ul>;
+  let statesList = <ul className="states-list">{statesListItems}</ul>;
   if(filteredStates.length === 0) {
     statesList = <p>No matches found</p>;
   }
 
   return (
-    <div>
-      <label htmlFor="filter">Input:</label>
-      <input type="text" id="filter" name="filter" value={filter} onChange={handleFilterChange}/>
-      <p>Substring: {filter}</p>
+    <div className="states-container">
+      <div className="states-input-container">
+        <label htmlFor="filter" className="states-input-label">Input:</label>
+        <input type="text" id="filter" name="filter" value={filter} onChange={handleFilterChange} className="states-input" />
+        <p className="states-substring">Substring: {filter}</p>
+      </div>
       {statesList}
     </div>
   );
