@@ -22,6 +22,7 @@ function States() {
     <div>
       <label htmlFor="filter">Input:</label>
       <input type="text" id="filter" name="filter" value={filter} onChange={handleFilterChange}/>
+      <p>Substring: {filter}</p>
       <ul>
         {statesList}
       </ul>
