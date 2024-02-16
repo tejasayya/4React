@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from '../components/header/header';
+import Header from './components/header/header.jsx';
 
 import States from './components/states/States';
 
 ReactDOM.render(
-  <States />,
+
+  <>
+    <Header></Header>
+    <States></States>
+  </>,
   document.getElementById('reactapp'),
 );

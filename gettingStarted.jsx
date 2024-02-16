@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.css';
 
-import Header from '../components/header/header';
+import Header from './components/header/header.jsx';
 
 import Example from './components/example/Example';
 
 ReactDOM.render(
-  <Example />,
-  document.getElementById('reactapp'),
+  <>
+    <Header />   
+    <Example />
+  </>,
+    document.getElementById('reactapp'),
 );
