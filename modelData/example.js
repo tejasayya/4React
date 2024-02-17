@@ -1,4 +1,4 @@
-"use strict";
+
 
 /*
  * Load the model data for Project 4, Problem 1. We load into DOM the
@@ -18,6 +18,5 @@ models.exampleModel = function () {
   return {
     name: "Group 11-Project 4",
     motto: "The Dev's"
-
   };
 };
