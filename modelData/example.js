@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+"use strict";
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
 
 /*
  * Load the model data for Project 4, Problem 1. We load into DOM the
@@ -16,7 +20,11 @@ if (models === undefined) {
 
 models.exampleModel = function () {
   return {
+<<<<<<< HEAD
     name: "Group 11-Project 4",
     motto: "The Dev's"
+=======
+    name: "Unknown Name",
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
   };
 };

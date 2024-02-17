@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+"use strict";
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
 
 /*
  * Load the model data for Project 4, Problem 2. We load into the property

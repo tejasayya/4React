@@ -23,9 +23,13 @@ class Example extends React.Component {
     // We read the example model data into the state variable 'name'
     this.state = {
       name: window.models.exampleModel().name,
+<<<<<<< HEAD
         motto: window.models.exampleModel().motto,
 
         counter: 0,
+=======
+      counter: 0,
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
       inputValue: '',
       buttonWasClicked: '',
     };
@@ -35,6 +39,7 @@ class Example extends React.Component {
     // generate new functions that handle the event by just calling
     // the method that handles the event.
     this.handleChangeBound = event => this.handleChange(event);
+<<<<<<< HEAD
       this.handleMottoChange = this.handleMottoChange.bind(this);
 
       // Note: A commmon idiom in React code is to use JavaScript bind() to
@@ -44,6 +49,12 @@ class Example extends React.Component {
     handleMottoChange(event) {
         this.setState({ motto: event.target.value });
     }
+=======
+    // Note: A commmon idiom in React code is to use JavaScript bind() to
+    // smash the method to accomplish this passthrough to the method:
+    //      this.handleChange = this.handleChange.bind(this);
+  }
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
 
   // React components have several "lifecycle functions"
   // https://reactjs.org/docs/react-component.html
@@ -109,6 +120,7 @@ class Example extends React.Component {
       <div className="container Example">
         <h1>Project 4 React.js Example</h1>
 
+<<<<<<< HEAD
           <div className="motto-update">
               {/* Your problem #1 motto displaying and updating widget goes here */}
               <h1>{this.state.name}</h1>
@@ -133,11 +145,30 @@ class Example extends React.Component {
               &nbsp;
               named <span className="code-name">Example</span>.
               It is located in the
+=======
+        <div className="motto-update">
+          {/* Your problem #1 motto displaying and updating widget goes here */}
+        </div>
+
+        <p>
+          This view is an example of a
+          &nbsp;
+          <a href="https://reactjs.org/docs/react-component.html" target="_blank" rel="noopener noreferrer">
+            React.js Component
+          </a>
+          &nbsp;
+          named <span className="code-name">Example</span>.
+          It is located in the
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
           file <code>components/example/Example.jsx</code>.
           It looks like a JavaScript class named Example that has a method named
           named <span className="code-name">render</span>, which
           appears to written in something that looks like HTML.
+<<<<<<< HEAD
           </p>
+=======
+        </p>
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
         <p>
           It is actually written in a language named &nbsp;
           <a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank" rel="noopener noreferrer">

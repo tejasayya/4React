@@ -32,6 +32,7 @@ you use won't conflict with these names.
 .code-name {
   font-family: Courier New, monospace;
 }
+<<<<<<< HEAD
 .motto-update h1 {
   font-size: 1.5rem;
   color: #2c3e50;
@@ -67,3 +68,5 @@ you use won't conflict with these names.
   transition: border-color 0.3s ease-in-out;
 }
 
+=======
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1

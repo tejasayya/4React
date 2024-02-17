@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .states-container {
     gap: 20px;
     font-size: 2em;
@@ -33,3 +34,11 @@
     padding: 20px;
     border-radius: 8px;
 }
+=======
+/*
+CSS for the Project 4, Problem 2 States component
+
+Since CSS uses a global name space for classes we should use names starting with
+states- here.
+*/
+>>>>>>> a85479c3c4657b224a84881d7acf30dcfb5696c1
